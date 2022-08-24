@@ -43,12 +43,19 @@ p {
     color: #CDFEAA;
   }
 
-
+  [class~=section] {
+    border: 1px solid black;
+    display:block;
+    margin:auto;
+   padding: 5px;
+    
+  }
 
 [class~=section-s1] {
     border: 1px solid rgb(161, 152, 152);
     display:block;
     margin:auto;
+    padding: 2rem;
    
     
   }
