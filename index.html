@@ -1,98 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- CSS only -->
-<link rel="stylesheet" href="./css/style.css">
-<script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+  <title>Document</title>
 </head>
-<body id="body">  
-    <!-- header -->
-    <header>
-      <div class="icon__menu">
-          <i class="fas fa-bars" id="btn_open"></i>
-      </div>
+
+<body id="body">
+  <!-- header -->
+  <header>
+    <div class="icon__menu">
+      <i class="fas fa-bars" id="btn_open"></i>
+    </div>
   </header>
 
-    <!--End header -->
+  <!--End header -->
 
-    <!--  main -->
-    
-     <div class="menu__side" id="menu_side">
+  <!--  main -->
 
-        <div class="name__page">
-            <i class="fab fa-youtube"></i>
-            <h4>MagtimusPro</h4>
+  <div class="menu__side" id="menu_side">
+
+    <div class="name__page">
+      <i class="fab fa-youtube"></i>
+      <h4>Model Cam</h4>
+    </div>
+
+    <div class="options__menu">
+
+      <a href="#" class="selected" onclick="ClassOpcion(event, 'home')">
+        <div class="option">
+          <i class="fas fa-home" title="Inicio"></i>
+          <h4>Inicio</h4>
         </div>
+      </a>
 
-        <div class="options__menu">	
-
-            <a href="#" id="home" class="selected" onclick="ClassOpcion(event, 'home')">
-                <div class="option">
-                    <i class="fas fa-home" title="Inicio"></i>
-                    <h4>Inicio</h4>
-                </div>
-            </a>
-
-            <a href="#p" id="portafolio"  onclick="ClassOpcion(event, 'portafolio')" >
-                <div class="option">
-                    <i class="far fa-file" title="Portafolio"></i>
-                    <h4>Portafolio</h4>
-                </div>
-            </a>
-            
-            <a href="#" id="curso"  onclick="ClassOpcion(event, 'curso')">
-                <div class="option">
-                    <i class="fas fa-video" title="Cursos"></i>
-                    <h4>Cursos</h4>
-                </div>
-            </a>
-
-            <a href="#"  id="blog"  onclick="ClassOpcion(event, 'blog')">
-                <div class="option">
-                    <i class="far fa-sticky-note" title="Blog"></i>
-                    <h4>Blog</h4>
-                </div>
-            </a>
-
-            <a href="#"  id="contacto"  onclick="ClassOpcion(event, 'contacto')">
-                <div class="option">
-                    <i class="far fa-id-badge" title="Contacto"></i>
-                    <h4>Contacto</h4>
-                </div>
-            </a>
-
-            <a href="#"  id="nosotros"  onclick="ClassOpcion(event, 'nosotros')">
-                <div class="option">
-                    <i class="far fa-address-card" title="Nosotros"></i>
-                    <h4>Nosotros</h4>
-                </div>
-            </a>
-
+      <a href="#p" onclick="ClassOpcion(event, 'portafolio')">
+        <div class="option">
+          <i class="far fa-file" title="Portafolio"></i>
+          <h4>Portafolio</h4>
         </div>
+      </a>
+
+      <a href="#"  onclick="ClassOpcion(event, 'curso')">
+        <div class="option">
+          <i class="fas fa-video" title="Cursos"></i>
+          <h4>Cursos</h4>
+        </div>
+      </a>
+
+      <a href="#"  onclick="ClassOpcion(event, 'blog')">
+        <div class="option">
+          <i class="far fa-sticky-note" title="Blog"></i>
+          <h4>Blog</h4>
+        </div>
+      </a>
+
+      <a href="#"  onclick="ClassOpcion(event, 'contacto')">
+        <div class="option">
+          <i class="far fa-id-badge" title="Contacto"></i>
+          <h4>Contacto</h4>
+        </div>
+      </a>
+
+      <a href="#"  onclick="ClassOpcion(event, 'nosotros')">
+        <div class="option">
+          <i class="far fa-address-card" title="Nosotros"></i>
+          <h4>Nosotros</h4>
+        </div>
+      </a>
 
     </div>
 
-    <main>
-    <div id="home" >
-        <h1>Title Exemple</h1><br>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sapiente cumque dicta animi explicabo sequi. Ex amet et, dolor eligendi commodi consectetur quo voluptatibus, cum nemo porro veniam at blanditiis?</p> <br>
+  </div>
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident adipisci beatae impedit quia, deleniti quasi sequi iusto exercitationem nihil nulla, laboriosam dolore corrupti fuga officiis? Odit a mollitia id magnam amet delectus quia blanditiis reprehenderit explicabo eveniet! Rem voluptatum explicabo ipsum quae, dolorum, laudantium doloribus a, illum saepe sapiente accusantium dicta reiciendis? Amet iure porro voluptatum error fugit odit voluptas?</p>
+  <main>
+    <div id="home" class="tabcontent">
+      <h1 id="Homee">HOME</h1><br>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sapiente cumque dicta animi explicabo sequi. Ex
+        amet et, dolor eligendi commodi consectetur quo voluptatibus, cum nemo porro veniam at blanditiis?</p> <br>
+
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident adipisci beatae impedit quia, deleniti
+        quasi sequi iusto exercitationem nihil nulla, laboriosam dolore corrupti fuga officiis? Odit a mollitia id
+        magnam amet delectus quia blanditiis reprehenderit explicabo eveniet! Rem voluptatum explicabo ipsum quae,
+        dolorum, laudantium doloribus a, illum saepe sapiente accusantium dicta reiciendis? Amet iure porro voluptatum
+        error fugit odit voluptas?</p>
     </div>
 
-    <div id="p" class="tabcontent">
-    <div style="background-color: black;">
-      <h1>Title Exemple</h1><br>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sapiente cumque dicta animi explicabo sequi. Ex amet et, dolor eligendi commodi consectetur quo voluptatibus, cum nemo porro veniam at blanditiis?</p> <br>
+    <div id="portafolio" class="tabcontent">
+      <h1>PORTAFOLIO</h1><br>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sapiente cumque dicta animi explicabo sequi. Ex
+        amet et, dolor eligendi commodi consectetur quo voluptatibus, cum nemo porro veniam at blanditiis?</p> <br>
 
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident adipisci beatae impedit quia, deleniti quasi sequi iusto exercitationem nihil nulla, laboriosam dolore corrupti fuga officiis? Odit a mollitia id magnam amet delectus quia blanditiis reprehenderit explicabo eveniet! Rem voluptatum explicabo ipsum quae, dolorum, laudantium doloribus a, illum saepe sapiente accusantium dicta reiciendis? Amet iure porro voluptatum error fugit odit voluptas?</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident adipisci beatae impedit quia, deleniti
+        quasi sequi iusto exercitationem nihil nulla, laboriosam dolore corrupti fuga officiis? Odit a mollitia id
+        magnam amet delectus quia blanditiis reprehenderit explicabo eveniet! Rem voluptatum explicabo ipsum quae,
+        dolorum, laudantium doloribus a, illum saepe sapiente accusantium dicta reiciendis? Amet iure porro voluptatum
+        error fugit odit voluptas?</p>
     </div>
-  </div> 
-<!-- 
+    <div id="curso" class="tabcontent">
+      <h1>CURSO</h1><br>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sapiente cumque dicta animi explicabo sequi. Ex
+        amet et, dolor eligendi commodi consectetur quo voluptatibus, cum nemo porro veniam at blanditiis?</p> <br>
+
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident adipisci beatae impedit quia, deleniti
+        quasi sequi iusto exercitationem nihil nulla, laboriosam dolore corrupti fuga officiis? Odit a mollitia id
+        magnam amet delectus quia blanditiis reprehenderit explicabo eveniet! Rem voluptatum explicabo ipsum quae,
+        dolorum, laudantium doloribus a, illum saepe sapiente accusantium dicta reiciendis? Amet iure porro voluptatum
+        error fugit odit voluptas?</p>
+    </div>
+    <div id="blog" class="tabcontent">
+      <h1>BLOG</h1><br>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sapiente cumque dicta animi explicabo sequi. Ex
+        amet et, dolor eligendi commodi consectetur quo voluptatibus, cum nemo porro veniam at blanditiis?</p> <br>
+
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident adipisci beatae impedit quia, deleniti
+        quasi sequi iusto exercitationem nihil nulla, laboriosam dolore corrupti fuga officiis? Odit a mollitia id
+        magnam amet delectus quia blanditiis reprehenderit explicabo eveniet! Rem voluptatum explicabo ipsum quae,
+        dolorum, laudantium doloribus a, illum saepe sapiente accusantium dicta reiciendis? Amet iure porro voluptatum
+        error fugit odit voluptas?</p>
+    </div>
+    <div id="contacto" class="tabcontent">
+      <h1>CONTACTO</h1><br>
+
+
+    </div>
+
+    <div id="nosotros" class="tabcontent">
+      <h1>NOSOTROS</h1><br>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sapiente cumque dicta animi explicabo sequi. Ex
+        amet et, dolor eligendi commodi consectetur quo voluptatibus, cum nemo porro veniam at blanditiis?</p> <br>
+
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident adipisci beatae impedit quia, deleniti
+        quasi sequi iusto exercitationem nihil nulla, laboriosam dolore corrupti fuga officiis? Odit a mollitia id
+        magnam amet delectus quia blanditiis reprehenderit explicabo eveniet! Rem voluptatum explicabo ipsum quae,
+        dolorum, laudantium doloribus a, illum saepe sapiente accusantium dicta reiciendis? Amet iure porro voluptatum
+        error fugit odit voluptas?</p>
+    </div>
+    <!-- 
         <div class="tab">
           <button class="tablinks" onclick="openCity(event, 'London')">London</button>
           <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
@@ -115,25 +164,25 @@
           <p>Tokyo is the capital of Japan.</p>
         </div> -->
 
-    </main>
+  </main>
 
-   
 
-    
-     <!--end  main -->
 
-    <!-- footer -->
-    <footer>
-      <div class="row primary">
-        <div class="column about">
-      
+
+  <!--end  main -->
+
+  <!-- footer -->
+  <footer>
+    <div class="row primary">
+      <div class="column about">
+
         <h3>Foolish Developer</h3>
-      
-         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-            voluptatem corporis error non,
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+          voluptatem corporis error non,
         </p>
-      
+
         <div class="social">
           <i class="fa-brands fa-facebook-square"></i>
           <i class="fa-brands fa-instagram-square"></i>
@@ -142,73 +191,75 @@
           <i class="fa-brands fa-whatsapp-square"></i>
         </div>
       </div>
-      
-      <div class="column links">
-      <h3>Some Links</h3>
-      
-       <ul>
-      
-        <li>
-         <a href="#faq">F.A.Q</a>
-        </li>
-        <li>
-         <a href="#cookies-policy">Cookies Policy</a>
-        </li>
-        <li>
-         <a href="#terms-of-services">Terms Of Service</a>
-        </li>
-        <li>
-         <a href="#support">Support</a>
-        </li>
-       </ul>
-      
-      </div>
-      
-      
+
       <div class="column links">
         <h3>Some Links</h3>
-         <ul>
+
+        <ul>
+
           <li>
-           <a href="#faq">F.A.Q</a>
+            <a href="#faq">F.A.Q</a>
           </li>
           <li>
-           <a href="#cookies-policy">Cookies Policy</a>
+            <a href="#cookies-policy">Cookies Policy</a>
           </li>
           <li>
-          <a href="#terms-of-services">Terms Of Service</a>
+            <a href="#terms-of-services">Terms Of Service</a>
           </li>
           <li>
-          <a href="#support">Support</a>
+            <a href="#support">Support</a>
+          </li>
+        </ul>
+
+      </div>
+
+
+      <div class="column links">
+        <h3>Some Links</h3>
+        <ul>
+          <li>
+            <a href="#faq">F.A.Q</a>
+          </li>
+          <li>
+            <a href="#cookies-policy">Cookies Policy</a>
+          </li>
+          <li>
+            <a href="#terms-of-services">Terms Of Service</a>
+          </li>
+          <li>
+            <a href="#support">Support</a>
           </li>
         </ul>
       </div>
-      
+
       <div class="column subscribe">
-       <h3>Newsletter</h3>
+        <h3>Newsletter</h3>
         <div>
-         <input type="email" placeholder="Your email id here" />
-         <button>Subscribe</button>
+          <input type="email" placeholder="Your email id here" />
+          <button>Subscribe</button>
         </div>
-      
+
       </div>
-      
-      </div>
-      
-      <div class="row copyright">
-        <div class="footer-menu">
-      
+
+    </div>
+
+    <div class="row copyright">
+      <div class="footer-menu">
+
         <a href="">Home</a>
         <a href="">About</a>
         <a href="">Contact</a>
         <a href="">Blog</a>
         <a href="">Social</a>
-      
-        </div>
-         <p>Copyright &copy; 202 Foolish Developer</p>
-      </div>
-    </footer>
-    <!-- end footer -->
 
+      </div>
+      <p>Copyright &copy; 202 Foolish Developer</p>
+    </div>
+  </footer>
+  <!-- end footer -->
+  <script src="js/jquery.js"></script>
   <script src="js/Utilidades.js"></script>
+  
 </body>
+
 </html>

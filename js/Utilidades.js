@@ -58,6 +58,5 @@ function ClassOpcion(evt, opcion) {
     evt.currentTarget.className += " selected";
   }
 
-
  
 
