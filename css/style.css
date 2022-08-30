@@ -14,14 +14,16 @@ width: 45%;
     background-color: #e3f2fd;
     color: #a7a7a7;
     font-size: 16px;
-    position: absolute;
+    position:absolute;
     bottom: 0;
+    
   }
   footer * {
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     border: none;
     outline: none;
+
   }
   .row {
     padding: 1em 1em;
@@ -126,10 +128,14 @@ body{
     margin-left: 80px;
     margin-top: 80px;
     transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    position: relative;
+    padding-bottom: 20em;
+    min-height: 100vh;
 }
 
-main{
+main *{
     padding: 20px;
+    height: 100%
 }
 
 header{
@@ -305,3 +311,4 @@ a.selected{
   border: 1px solid #ccc;
   border-top: none;
 }
+
