@@ -5,13 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS only -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/contact.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="A.fonts,,_icomoon,,_style.css+css,,_bootstrap.min.css+css,,_style.css,Mcc.Ur9QPgg62V.css.pagespeed.cf.9pl5VifGec.css" />
+   
+        <link rel="stylesheet" href="./css/style.css" />  
     <script
       src="https://kit.fontawesome.com/41bcea2ae3.js"
       crossorigin="anonymous"
     ></script>
     <title>Document</title>
+    <script src="componentes/footer.js"></script>
   </head>
+
+
 
   <body id="body">
     <!-- header -->
@@ -220,7 +229,62 @@
       </div>
       <div id="contacto" class="tabcontent">
         <h1>CONTACTO</h1>
-        <br />
+          <br />
+
+     
+                    <div class="col-md-12">
+                        <div class="form h-100">
+                            <h3>Get Started</h3>
+                            <form class="mb-5" method="post" id="contactForm" name="contactForm">
+                                <div class="row">
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label for="" class="col-form-label">Name *</label>
+                                        <input type="text" class="form-control" name="name" id="name"
+                                            placeholder="Your name">
+                                    </div>
+                                    <div class="col-md-6 form-group mb-3">
+                                        <label for="" class="col-form-label">Email *</label>
+                                        <input type="text" class="form-control" name="email" id="email"
+                                            placeholder="Your email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 form-group mb-3">
+                                        <label for="budget" class="col-form-label">Budget</label>
+                                        <select class="custom-select" id="budget" name="budget">
+                                            <option selected>Choose...</option>
+                                            <option value="$1000 below">
+                                                < $1,000</option>
+                                            <option value="$2,000 - $5,000">$2,000 - $5,000</option>
+                                            <option value="$5,000 - $15,000">$5,000 - $15,000</option>
+                                            <option value="$15,000 - $25,000">$15,000 - $25,000</option>
+                                            <option value="$25,000 >">$25,000 ></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 form-group mb-3">
+                                        <label for="message" class="col-form-label">Message *</label>
+                                        <textarea class="form-control" name="message" id="message" cols="30" rows="4"
+                                            placeholder="Write your message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+                                        <input type="submit" value="Send Message"
+                                            class="btn btn-primary rounded-0 py-2 px-4">
+                                        <span class="submitting"></span>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="form-message-warning mt-4"></div>
+                            <div id="form-message-success">
+                                Your message was sent, thank you!
+                            </div>
+                        </div>
+                    </div>
+                    
+                
       </div>
 
       <div id="nosotros" class="tabcontent">
@@ -270,9 +334,9 @@
     </main>
 
     <!--end  main -->
-
+    
     <!-- footer -->
-     <footer>
+     <!-- <footer>  
       <div class="row primary">
         <div class="column about">
           <h3>Foolish Developer</h3>
@@ -347,8 +411,14 @@
         </div>
         <p>Copyright &copy; 2022 Foolish Developer</p>
       </div>
-    </footer> 
-    <!-- end footer -->
+    </footer>  -->
+ 
+
+
+  <hello-component></hello-component>
+       <!-- end footer -->
+
+
     <script src="js/jquery.js"></script>
     <script src="js/Utilidades.js"></script>
   </body>
